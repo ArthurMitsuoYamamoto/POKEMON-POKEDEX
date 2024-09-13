@@ -18,7 +18,7 @@
 
 ## 🤔 Sobre
 
-Projeto **Pokedex**, feito para listar os pokémons da API PokeAPI.
+Projeto **POKEMON-POKEDEX**, feito para listar os pokémons da API PokeAPI.
 
 
 ---
