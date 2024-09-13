@@ -15,7 +15,6 @@
 - [Estrutura de Pastas](#-estrutura-de-pastas)
 - [Funcionalidades](#-funcionalidades)
 - [Criadores](#-criadores)
-- [Download](#-download)
 
 ---
 
