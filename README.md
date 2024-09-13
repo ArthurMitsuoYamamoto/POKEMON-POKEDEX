@@ -138,7 +138,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
       </a>
     </td>
     <td align="center">
-      <a href="https://media.licdn.com/dms/image/v2/D4E35AQH2hponxB6opg/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1720060382679?e=1726801200&v=beta&t=2yYtzZenMXO1GTENYqmbTbvWEu1XLpVJS4He4I9ha4I" target="_blank">
+      <a href="https://github.com/RamonCezarinoLopez" target="_blank">
         <img src="https://avatars.githubusercontent.com/u/126570736?v=4" width="100px;" alt="Foto do github Ramon Cezarino Lopez"/><br>
         <sub>
           <b>Ramon Cezarino Lopez</b>
