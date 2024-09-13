@@ -56,7 +56,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
   $ git clone https://github.com/ArthurMitsuoYamamoto/POKEMON-POKEDEX.git
 
   # Entrar na pasta do projeto
-  $ cd pokedex
+  $ cd POKEMON-POKEDEX
 
   # Instalar as dependências
   $ yarn
