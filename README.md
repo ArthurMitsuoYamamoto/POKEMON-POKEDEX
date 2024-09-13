@@ -1,3 +1,5 @@
+Claro! Aqui está o índice atualizado:
+
 ---
 
 <h1 align="center">
@@ -12,6 +14,7 @@
 - [Como baixar o projeto](#-como-baixar-o-projeto)
 - [Estrutura de Pastas](#-estrutura-de-pastas)
 - [Funcionalidades](#-funcionalidades)
+- [Criadores](#-criadores)
 - [Download](#-download)
 
 ---
@@ -117,7 +120,6 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 ---
 
 ## 🤝 Criadores
-# Respectivos perfis do github
 
 <table>
   <tr>
@@ -163,3 +165,6 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
     </td>
   </tr>
 </table>
+
+---
+
