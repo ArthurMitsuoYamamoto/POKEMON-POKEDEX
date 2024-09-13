@@ -107,7 +107,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ---
 
-## 💻 Funcionalidades/Documentação
+## 💻 Funcionalidades
 
 - Listagem de pokémons da API
 - Visualizar detalhes do pokémon
