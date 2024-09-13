@@ -10,7 +10,7 @@
 - [Pré-requisitos](#-pré-requisitos)
 - [Tecnologias utilizadas](#-tecnologias-utilizadas)
 - [Como baixar o projeto](#-como-baixar-o-projeto)
-- [Preview do projeto](#-preview-do-projeto)
+- [Estrutura de Pastas](#-estrutura-de-pastas)
 - [Funcionalidades](#-funcionalidades)
 - [Download](#-download)
 
@@ -19,7 +19,6 @@
 ## 🤔 Sobre
 
 Projeto **POKEMON-POKEDEX**, feito para listar os pokémons da API PokeAPI.
-
 
 ---
 
@@ -36,7 +35,6 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * **Configuração do Ambiente**: Verifique se as variáveis de ambiente `JAVA_HOME` e `ANDROID_HOME` estão configuradas corretamente.
 
 ---
-
 
 ## 💻 Tecnologias utilizadas
 
@@ -70,43 +68,42 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 ## 🗂 Estrutura de Pastas
 
 .POKEMON-POKEDEX
-├── src
-│   ├── @types
+├── src/
+│   ├── @types/
 │   │   └── index.d.ts
-│   ├── assets
-│   │   └── img
-│   ├── components
-│   │   ├── Card
+│   ├── assets/
+│   │   └── img/
+│   ├── components/
+│   │   ├── Card/
 │   │   │   ├── index.tsx
 │   │   │   └── styles.ts
-│   │   ├── CardAnimated
+│   │   ├── CardAnimated/
 │   │   │   ├── index.tsx
 │   │   │   └── styles.ts
-│   │   └── Load
+│   │   └── Load/
 │   │       ├── index.tsx
 │   │       └── styles.ts
-│   ├── global
-│   │   ├── styles
+│   ├── global/
+│   │   ├── styles/
 │   │   │   └── styled.t.ts
 │   │   └── theme.ts
-│   ├── pages
-│   │   ├── About
-│   │   │   ├── img
+│   ├── pages/
+│   │   ├── About/
+│   │   │   ├── img/
 │   │   │   ├── index.tsx
 │   │   │   └── styles.ts
-│   │   ├── Home
+│   │   ├── Home/
 │   │   │   ├── index.tsx
 │   │   │   └── styles.ts
-│   │   └── Welcome
+│   │   └── Welcome/
 │   │       ├── index.tsx
 │   │       ├── styles.ts
 │   │       └── pokemon.json
-│   ├── routes
+│   ├── routes/
 │   │   ├── app.routes.tsx
 │   │   └── index.tsx
-│   └── services
+│   └── services/
 │       └── api.ts
-
 
 ---
 
@@ -118,7 +115,6 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - Listar habilidades
 
 ---
-
 
 ## 🤝 Criadores
 # Respectivos perfis do github
@@ -167,4 +163,3 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
     </td>
   </tr>
 </table>
-
