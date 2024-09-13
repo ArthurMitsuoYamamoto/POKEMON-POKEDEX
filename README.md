@@ -127,3 +127,52 @@ Segue o link para download do APK (Android):
 
 ---
 
+
+## 🤝 Criadores
+# Respectivos perfis do github
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/ArthurMitsuoYamamoto" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/135779587?v=4" width="100px;" alt="Foto do github Arthur Mitsuo Yamamoto"/><br>
+        <sub>
+          <b>Arthur Mitsuo Yamamoto</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/FrancineldoLuan" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/127765135?v=4" width="100px;" alt="Foto do github Francineldo Luan"/><br>
+        <sub>
+          <b>Francineldo Luan</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/RamonCezarinoLopez" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4E35AQH2hponxB6opg/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1720060382679?e=1725757200&v=beta&t=i7otrf0IRe0od8xFmrEY8TWHlxslc-OWgyEp6y4Nwzo" width="100px;" alt="Foto do github Ramon Cezarino Lopez"/><br>
+        <sub>
+          <b>Ramon Cezarino Lopez</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/EnzoLafer" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQEjlIh2Qt9RGQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1718626134472?e=1730937600&v=beta&t=jQtnmzUzU4MsX8V60lwFP1SEJmzaXLOaE6sDA-HIUm0" width="100px;" alt="Foto do github Enzo Lafer Gallucci"/><br>
+        <sub>
+          <b>Enzo Lafer Gallucci</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/DanielAraujoFaria" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQE8kCKYGe8mig/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1674257256462?e=1730332800&v=beta&t=WU_GhGeOTY1dOQymUMzC4lPQMbB2jYu6TcSv3kryGHE" width="100px;" alt="Foto do Daniel Araujo Faria"/><br>
+        <sub>
+          <b>Daniel Araujo Faria</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
