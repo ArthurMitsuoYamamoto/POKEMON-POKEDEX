@@ -119,14 +119,6 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ---
 
-## ⬇ Download
-
-Segue o link para download do APK (Android):
-
-[Download APK](https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40rgmellon/mypokedex-23943422436e4cfbb59ab9799209522e-signed.apk)
-
----
-
 
 ## 🤝 Criadores
 # Respectivos perfis do github
