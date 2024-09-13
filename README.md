@@ -1,5 +1,3 @@
-Aqui está o README atualizado com o índice para "Pré-requisitos" adicionado:
-
 ---
 
 <h1 align="center">
