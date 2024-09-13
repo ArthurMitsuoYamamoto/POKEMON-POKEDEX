@@ -67,6 +67,47 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
   $ expo start
 ```
 
+## 🗂 Estrutura de Pastas
+
+.POKEMON-POKEDEX
+├── src
+│   ├── @types
+│   │   └── index.d.ts
+│   ├── assets
+│   │   └── img
+│   ├── components
+│   │   ├── Card
+│   │   │   ├── index.tsx
+│   │   │   └── styles.ts
+│   │   ├── CardAnimated
+│   │   │   ├── index.tsx
+│   │   │   └── styles.ts
+│   │   └── Load
+│   │       ├── index.tsx
+│   │       └── styles.ts
+│   ├── global
+│   │   ├── styles
+│   │   │   └── styled.t.ts
+│   │   └── theme.ts
+│   ├── pages
+│   │   ├── About
+│   │   │   ├── img
+│   │   │   ├── index.tsx
+│   │   │   └── styles.ts
+│   │   ├── Home
+│   │   │   ├── index.tsx
+│   │   │   └── styles.ts
+│   │   └── Welcome
+│   │       ├── index.tsx
+│   │       ├── styles.ts
+│   │       └── pokemon.json
+│   ├── routes
+│   │   ├── app.routes.tsx
+│   │   └── index.tsx
+│   └── services
+│       └── api.ts
+
+
 ---
 
 ## 💻 Funcionalidades
