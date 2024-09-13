@@ -74,10 +74,9 @@ export function About() {
 
         const { stats, abilities, id, name, types } = response.data;
 
-        const currentType = types[0].type.name;
+        const currentType = types[0].type.name as keyof typeof colors.backgroundCard;
 
         const color = colors.backgroundCard[currentType];
-
         setPokemon({
           stats,
           abilities,
