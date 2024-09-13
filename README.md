@@ -10,7 +10,7 @@
 - [Pré-requisitos](#-pré-requisitos)
 - [Tecnologias utilizadas](#-tecnologias-utilizadas)
 - [Como baixar o projeto](#-como-baixar-o-projeto)
-- [Preview do projeto](#-preview-do-projeto)
+- [Estrutura de Pastas](#-estrutura-de-pastas)
 - [Funcionalidades](#-funcionalidades)
 - [Download](#-download)
 
@@ -19,7 +19,6 @@
 ## 🤔 Sobre
 
 Projeto **POKEMON-POKEDEX**, feito para listar os pokémons da API PokeAPI.
-
 
 ---
 
@@ -36,7 +35,6 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * **Configuração do Ambiente**: Verifique se as variáveis de ambiente `JAVA_HOME` e `ANDROID_HOME` estão configuradas corretamente.
 
 ---
-
 
 ## 💻 Tecnologias utilizadas
 
@@ -58,7 +56,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
   $ git clone https://github.com/ArthurMitsuoYamamoto/POKEMON-POKEDEX.git
 
   # Entrar na pasta do projeto
-  $ cd pokedex
+  $ cd POKEMON-POKEDEX
 
   # Instalar as dependências
   $ yarn
@@ -70,43 +68,42 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 ## 🗂 Estrutura de Pastas
 
 .POKEMON-POKEDEX
-├── src
-│   ├── @types
+├── src/
+│   ├── @types/
 │   │   └── index.d.ts
-│   ├── assets
-│   │   └── img
-│   ├── components
-│   │   ├── Card
+│   ├── assets/
+│   │   └── img/
+│   ├── components/
+│   │   ├── Card/
 │   │   │   ├── index.tsx
 │   │   │   └── styles.ts
-│   │   ├── CardAnimated
+│   │   ├── CardAnimated/
 │   │   │   ├── index.tsx
 │   │   │   └── styles.ts
-│   │   └── Load
+│   │   └── Load/
 │   │       ├── index.tsx
 │   │       └── styles.ts
-│   ├── global
-│   │   ├── styles
+│   ├── global/
+│   │   ├── styles/
 │   │   │   └── styled.t.ts
 │   │   └── theme.ts
-│   ├── pages
-│   │   ├── About
-│   │   │   ├── img
+│   ├── pages/
+│   │   ├── About/
+│   │   │   ├── img/
 │   │   │   ├── index.tsx
 │   │   │   └── styles.ts
-│   │   ├── Home
+│   │   ├── Home/
 │   │   │   ├── index.tsx
 │   │   │   └── styles.ts
-│   │   └── Welcome
+│   │   └── Welcome/
 │   │       ├── index.tsx
 │   │       ├── styles.ts
 │   │       └── pokemon.json
-│   ├── routes
+│   ├── routes/
 │   │   ├── app.routes.tsx
 │   │   └── index.tsx
-│   └── services
+│   └── services/
 │       └── api.ts
-
 
 ---
 
@@ -119,11 +116,50 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ---
 
-## ⬇ Download
+## 🤝 Criadores
+# Respectivos perfis do github
 
-Segue o link para download do APK (Android):
-
-[Download APK](https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40rgmellon/mypokedex-23943422436e4cfbb59ab9799209522e-signed.apk)
-
----
-
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/ArthurMitsuoYamamoto" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/135779587?v=4" width="100px;" alt="Foto do github Arthur Mitsuo Yamamoto"/><br>
+        <sub>
+          <b>Arthur Mitsuo Yamamoto</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/FrancineldoLuan" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/127765135?v=4" width="100px;" alt="Foto do github Francineldo Luan"/><br>
+        <sub>
+          <b>Francineldo Luan</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/RamonCezarinoLopez" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4E35AQH2hponxB6opg/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1720060382679?e=1725757200&v=beta&t=i7otrf0IRe0od8xFmrEY8TWHlxslc-OWgyEp6y4Nwzo" width="100px;" alt="Foto do github Ramon Cezarino Lopez"/><br>
+        <sub>
+          <b>Ramon Cezarino Lopez</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/EnzoLafer" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQEjlIh2Qt9RGQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1718626134472?e=1730937600&v=beta&t=jQtnmzUzU4MsX8V60lwFP1SEJmzaXLOaE6sDA-HIUm0" width="100px;" alt="Foto do github Enzo Lafer Gallucci"/><br>
+        <sub>
+          <b>Enzo Lafer Gallucci</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/DanielAraujoFaria" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQE8kCKYGe8mig/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1674257256462?e=1730332800&v=beta&t=WU_GhGeOTY1dOQymUMzC4lPQMbB2jYu6TcSv3kryGHE" width="100px;" alt="Foto do Daniel Araujo Faria"/><br>
+        <sub>
+          <b>Daniel Araujo Faria</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
