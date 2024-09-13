@@ -22,7 +22,6 @@ Aqui está o README atualizado com o índice para "Pré-requisitos" adicionado:
 
 Projeto **Pokedex**, feito para listar os pokémons da API PokeAPI.
 
-Layout baseado [neste projeto](https://www.behance.net/gallery/95727849/Pokdex-App/modules/552909481).
 
 ---
 
@@ -40,17 +39,6 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 ---
 
-## 📱 Preview do projeto
-
-Segue alguns prints do projeto:
-
-<div>
-  <img style="margin: 5px" alt="login" src="https://i.imgur.com/hWZCREJ.jpg" width="200">
-  <img style="margin: 5px" alt="register" src="https://i.imgur.com/9shBv0i.jpg" width="200">
-  <img style="margin: 5px" alt="dashboard" src="https://i.imgur.com/uaCglKD.jpg" width="200">
-</div>
-
----
 
 ## 💻 Tecnologias utilizadas
 
@@ -69,7 +57,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ```bash
   # Clonar o repositório
-  $ git clone https://github.com/RgMellon/pokedex.git
+  $ git clone https://github.com/ArthurMitsuoYamamoto/POKEMON-POKEDEX.git
 
   # Entrar na pasta do projeto
   $ cd pokedex
@@ -100,4 +88,3 @@ Segue o link para download do APK (Android):
 
 ---
 
-Agora o índice inclui a seção de "Pré-requisitos".
