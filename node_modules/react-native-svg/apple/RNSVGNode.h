@@ -6,10 +6,16 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-#import <React/UIView+React.h>
-#import <React/RCTPointerEvents.h>
 #import "RNSVGCGFCRule.h"
 #import "RNSVGSvgView.h"
+
+#import <React/RCTPointerEvents.h>
+#import <React/UIView+React.h>
+
+#ifdef RCT_NEW_ARCH_ENABLED
+#import <React/RCTViewComponentView.h>
+#endif // RCT_NEW_ARCH_ENABLED
+
 @class RNSVGGroup;
 
 /**
@@ -17,8 +23,12 @@
  ＊interfaces for all non-definition nodes.
  */
 
-@interface RNSVGNode : RNSVGView
-
+@interface RNSVGNode :
+#ifdef RCT_NEW_ARCH_ENABLED
+    RCTViewComponentView
+#else
+    RNSVGView
+#endif // RCT_NEW_ARCH_ENABLED
 /*
  N[1/Sqrt[2], 36]
  The inverse of the square root of 2.
@@ -36,6 +46,7 @@ extern CGFloat const RNSVG_DEFAULT_FONT_SIZE;
 @property (nonatomic, strong) NSString *markerStart;
 @property (nonatomic, strong) NSString *markerMid;
 @property (nonatomic, strong) NSString *markerEnd;
+@property (nonatomic, strong) RNSVGPlatformView *parentComponentView;
 
 /**
  * Used to control how touch events are processed.
@@ -62,7 +73,6 @@ extern CGFloat const RNSVG_DEFAULT_FONT_SIZE;
 @property (nonatomic, assign) CGRect strokeBounds;
 @property (nonatomic, assign) CGRect markerBounds;
 @property (nonatomic, copy) RCTDirectEventBlock onLayout;
-
 
 /**
  * RNSVGSvgView which ownes current RNSVGNode
@@ -101,7 +111,7 @@ extern CGFloat const RNSVG_DEFAULT_FONT_SIZE;
 /**
  * getPath will return the path inside node as a ClipPath.
  */
-- (CGPathRef)getPath:(CGContextRef) context;
+- (CGPathRef)getPath:(CGContextRef)context;
 
 - (CGFloat)relativeOnWidthString:(NSString *)length;
 

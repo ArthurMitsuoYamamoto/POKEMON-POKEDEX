@@ -23,15 +23,28 @@ import Pattern from './elements/Pattern';
 import Mask from './elements/Mask';
 import Marker from './elements/Marker';
 import ForeignObject from './elements/ForeignObject';
-import { parse, SvgAst, SvgFromUri, SvgFromXml, SvgUri, SvgXml } from './xml';
+
 import {
-  SvgCss,
-  SvgCssUri,
-  SvgWithCss,
-  SvgWithCssUri,
-  inlineStyles,
-} from './css';
-import { LocalSvg, WithLocalSvg, loadLocalRawResource } from './LocalSvg';
+  parse,
+  SvgAst,
+  SvgFromUri,
+  SvgFromXml,
+  SvgUri,
+  SvgXml,
+  camelCase,
+  err,
+  fetchText,
+  JsxAST,
+  Middleware,
+  Styles,
+  UriProps,
+  UriState,
+  XmlAST,
+  XmlProps,
+  XmlState,
+  AstProps,
+} from './xml';
+
 import {
   RNSVGCircle,
   RNSVGClipPath,
@@ -48,13 +61,51 @@ import {
   RNSVGPattern,
   RNSVGRadialGradient,
   RNSVGRect,
-  RNSVGSvg,
+  RNSVGSvgAndroid,
+  RNSVGSvgIOS,
   RNSVGSymbol,
   RNSVGText,
   RNSVGTextPath,
   RNSVGTSpan,
   RNSVGUse,
-} from './elements/NativeComponents';
+} from './fabric';
+
+export {
+  SvgCss,
+  SvgCssUri,
+  SvgWithCss,
+  SvgWithCssUri,
+  inlineStyles,
+  LocalSvg,
+  WithLocalSvg,
+  loadLocalRawResource,
+} from './deprecated';
+
+export type { RectProps } from './elements/Rect';
+export type { CircleProps } from './elements/Circle';
+export type { EllipseProps } from './elements/Ellipse';
+export type { PolygonProps } from './elements/Polygon';
+export type { PolylineProps } from './elements/Polyline';
+export type { LineProps } from './elements/Line';
+export type { SvgProps } from './elements/Svg';
+export type { PathProps } from './elements/Path';
+export type { GProps } from './elements/G';
+export type { TextProps } from './elements/Text';
+export type { TSpanProps } from './elements/TSpan';
+export type { TextPathProps } from './elements/TextPath';
+export type { UseProps } from './elements/Use';
+export type { ImageProps } from './elements/Image';
+export type { SymbolProps } from './elements/Symbol';
+export type { LinearGradientProps } from './elements/LinearGradient';
+export type { RadialGradientProps } from './elements/RadialGradient';
+export type { StopProps } from './elements/Stop';
+export type { ClipPathProps } from './elements/ClipPath';
+export type { PatternProps } from './elements/Pattern';
+export type { MaskProps } from './elements/Mask';
+export type { MarkerProps } from './elements/Marker';
+export type { ForeignObjectProps } from './elements/ForeignObject';
+
+export * from './lib/extract/types';
 
 export {
   Svg,
@@ -87,14 +138,9 @@ export {
   SvgFromXml,
   SvgUri,
   SvgXml,
-  SvgCss,
-  SvgCssUri,
-  SvgWithCss,
-  SvgWithCssUri,
-  inlineStyles,
-  LocalSvg,
-  WithLocalSvg,
-  loadLocalRawResource,
+  camelCase,
+  err,
+  fetchText,
   Shape,
   RNSVGMarker,
   RNSVGMask,
@@ -115,8 +161,21 @@ export {
   RNSVGEllipse,
   RNSVGCircle,
   RNSVGRect,
-  RNSVGSvg,
+  RNSVGSvgAndroid,
+  RNSVGSvgIOS,
   RNSVGForeignObject,
+};
+
+export type {
+  JsxAST,
+  Middleware,
+  Styles,
+  UriProps,
+  UriState,
+  XmlAST,
+  XmlProps,
+  XmlState,
+  AstProps,
 };
 
 export default Svg;

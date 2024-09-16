@@ -8,13 +8,22 @@
 
 #import "RNSVGUIKit.h"
 
-#import "RNSVGPainter.h"
 #import "RNSVGContainer.h"
+#import "RNSVGPainter.h"
 #import "RNSVGVBMOS.h"
+
+#ifdef RCT_NEW_ARCH_ENABLED
+#import <React/RCTViewComponentView.h>
+#endif // RCT_NEW_ARCH_ENABLED
 
 @class RNSVGNode;
 
-@interface RNSVGSvgView : RNSVGView <RNSVGContainer>
+@interface RNSVGSvgView :
+#ifdef RCT_NEW_ARCH_ENABLED
+    RCTViewComponentView <RNSVGContainer>
+#else
+    RNSVGView <RNSVGContainer>
+#endif // RCT_NEW_ARCH_ENABLED
 
 @property (nonatomic, strong) RNSVGLength *bbWidth;
 @property (nonatomic, strong) RNSVGLength *bbHeight;
@@ -38,7 +47,7 @@
 
 - (RNSVGNode *)getDefinedClipPath:(NSString *)clipPathName;
 
-- (void)defineTemplate:(__kindof RNSVGNode *)template templateName:(NSString *)templateName;
+- (void)defineTemplate:(__kindof RNSVGNode *)definedTemplate templateName:(NSString *)templateName;
 
 - (RNSVGNode *)getDefinedTemplate:(NSString *)templateName;
 
@@ -54,9 +63,7 @@
 
 - (RNSVGNode *)getDefinedMask:(NSString *)maskName;
 
-- (NSString *)getDataURL;
-
-- (NSString *)getDataURLwithBounds:(CGRect)bounds;
+- (NSString *)getDataURLWithBounds:(CGRect)bounds;
 
 - (CGRect)getContextBounds;
 
