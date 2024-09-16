@@ -52,20 +52,22 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 ---
 
 ## 📦 Como baixar o projeto
-
-```bash
+  ```bash
   # Clonar o repositório
   $ git clone https://github.com/ArthurMitsuoYamamoto/POKEMON-POKEDEX.git
 
   # Entrar na pasta do projeto
   $ cd POKEMON-POKEDEX
 
-  # Instalar as dependências
-  $ yarn
+  # Instalar as dependências com Yarn (certifique-se de ter permissões para scripts)
+  $ yarn install
+
+  # OU, se preferir usar npm
+  $ npm install
 
   # Iniciar o projeto
   $ expo start
-```
+ ```
 
 ## 🗂 Estrutura de Pastas
 
