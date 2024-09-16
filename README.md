@@ -2,10 +2,6 @@
 
 ---
 
-<h1 align="center">
-  <img alt="Logo" src="https://i.imgur.com/mdRn8Hr.png" width="100%">
-</h1>
-
 ## Índice
 
 - [Sobre](#-sobre)
