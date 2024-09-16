@@ -1,10 +1,7 @@
-import styled, { css } from "styled-components/native";
-
-// Defina o tipo dos possíveis valores de "type"
-type PokemonTypeKey = 'grass' | 'fire' | 'water' | 'poison' | 'normal' | 'bug' | 'flying' | 'eletric' | 'ground';
+import styled, { css } from 'styled-components/native';
 
 interface PokemonType {
-  type: PokemonTypeKey;
+  type: string;
 }
 
 export const Container = styled.View`
