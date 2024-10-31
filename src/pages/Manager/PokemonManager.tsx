@@ -9,19 +9,19 @@ const POKE_API_URL = 'https://pokeapi.co/api/v2/pokemon';
 
 // Definindo os tipos de dados para os Pokémon
 type PokemonType = {
-  name: string;
-  url: string;
+    name: string;
+    url: string;
+    id: number; // ID do Pokémon
+    types: Array<{ type: { name: string; url: string } }>; // Tipos do Pokémon
 };
 
 export function PokemonManager() {
   const [pokemonName, setPokemonName] = useState<string>(''); 
   const [pokemonList, setPokemonList] = useState<PokemonType[]>([]); 
 
-
   useEffect(() => {
     loadPokemons();
   }, []);
-
 
   const loadPokemons = async () => {
     try {
@@ -34,7 +34,6 @@ export function PokemonManager() {
     }
   };
 
-  
   const addPokemon = async () => {
     if (!pokemonName) return;
 
@@ -42,15 +41,21 @@ export function PokemonManager() {
       const response = await axios.get(`${POKE_API_URL}/${pokemonName.toLowerCase()}`);
       const newPokemon = response.data;
 
+      // Verifica se o Pokémon já está na lista antes de adicioná-lo
+      const pokemonExists = pokemonList.some(pokemon => pokemon.name === newPokemon.name);
+      if (pokemonExists) {
+        Alert.alert('Erro', 'Pokémon já adicionado!');
+        return;
+      }
+
       const updatedPokemons = [...pokemonList, newPokemon];
       setPokemonList(updatedPokemons);
       await AsyncStorage.setItem('pokemons', JSON.stringify(updatedPokemons));
       setPokemonName('');
     } catch (error) {
-      Alert.alert('Erro', 'Pokémon não encontrado ou já adicionado!');
+      Alert.alert('Erro', 'Pokémon não encontrado!');
     }
   };
-
 
   const removePokemon = async (name: string) => {
     const updatedPokemons = pokemonList.filter(pokemon => pokemon.name !== name);
