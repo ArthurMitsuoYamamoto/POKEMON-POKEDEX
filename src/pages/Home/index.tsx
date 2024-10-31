@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import * as React from 'react';
+
 import { Alert, FlatList, Button } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -8,6 +9,7 @@ import pokeballImage from '../../assets/img/pokeball.png';
 import api from '../../services/api';
 import * as S from './styles';
 import { useNavigation } from '@react-navigation/native';
+import { useEffect, useState } from 'react';
 
 type PokemonType = {
   type: {

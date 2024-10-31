@@ -1,4 +1,5 @@
-import React from 'react';
+import * as React from 'react';
+
 import * as S from './styles';
 import pokeballCardImage from '../../assets/img/pokeballCard.png';
 import dotsImage from '../../assets/img/dots.png';

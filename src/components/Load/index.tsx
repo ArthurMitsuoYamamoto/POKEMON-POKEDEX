@@ -1,6 +1,8 @@
-import React from 'react';
+import * as React from 'react';
+
 
 import LottieView from 'lottie-react-native';
+
 import load from './load.json';
 
 import * as S from './styles';

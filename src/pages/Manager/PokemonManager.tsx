@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import * as React from 'react';
+
 import { View, Text, TextInput, FlatList, Alert, TouchableOpacity } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
 import styles from './styles';
+import { useEffect, useState } from 'react';
 
 // URL da API Pokémon
 const POKE_API_URL = 'https://pokeapi.co/api/v2/pokemon';
