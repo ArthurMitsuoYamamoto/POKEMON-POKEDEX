@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Alert, FlatList } from 'react-native';
+import { Alert, FlatList, Button } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import { Card } from '../../components/Card';
 import { Load } from '../../components/Load';
-
 import pokeballImage from '../../assets/img/pokeball.png';
-
 import api from '../../services/api';
-
 import * as S from './styles';
 import { useNavigation } from '@react-navigation/native';
 
@@ -31,33 +29,35 @@ export interface Request {
 
 export function Home() {
   const { navigate } = useNavigation();
-
   const [load, setLoad] = useState<boolean>(true);
   const [pokemons, setPokemons] = useState<Pokemon[]>([]);
 
   useEffect(() => {
     async function getPokemons(): Promise<void> {
       try {
-        const response = await api.get('/pokemon');
-        const { results } = response.data;
+        const storedPokemons = await AsyncStorage.getItem('pokemons');
+        if (storedPokemons) {
+          setPokemons(JSON.parse(storedPokemons));
+        } else {
+          const response = await api.get('/pokemon');
+          const { results } = response.data;
 
-        const payloadPokemons = await Promise.all(
-          results.map(async (pokemon: Pokemon) => {
-            const { id, types } = await getMoreInfoAboutPokemonsByUrl(
-              pokemon.url,
-            );
+          const payloadPokemons = await Promise.all(
+            results.map(async (pokemon: Pokemon) => {
+              const { id, types } = await getMoreInfoAboutPokemonsByUrl(pokemon.url);
+              return {
+                name: pokemon.name,
+                id,
+                types,
+              };
+            }),
+          );
 
-            return {
-              name: pokemon.name,
-              id,
-              types,
-            };
-          }),
-        );
-
-        setPokemons(payloadPokemons as Pokemon[]);
+          setPokemons(payloadPokemons as Pokemon[]);
+          await AsyncStorage.setItem('pokemons', JSON.stringify(payloadPokemons)); // Salvar no AsyncStorage
+        }
       } catch (err) {
-        Alert.alert('ops, algo de errado aconteceu, tente mais tarde');
+        Alert.alert('Ops, algo de errado aconteceu, tente mais tarde');
       } finally {
         setLoad(false);
       }
@@ -68,9 +68,7 @@ export function Home() {
 
   async function getMoreInfoAboutPokemonsByUrl(url: string): Promise<Request> {
     const response = await api.get(url);
-
     const { id, types } = response.data as Request;
-
     return { id, types };
   }
 
@@ -79,6 +77,7 @@ export function Home() {
       pokemonId,
     });
   }
+
   return load ? (
     <S.LoadingScreen>
       <Load />
@@ -91,6 +90,7 @@ export function Home() {
             <>
               <S.Header source={pokeballImage} />
               <S.Title> Pokédex</S.Title>
+              <Button title="Gerenciar Pokémon" onPress={() => navigate('PokemonManager')} /> {/* Botão para gerenciar Pokémon */}
             </>
           }
           contentContainerStyle={{
