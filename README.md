@@ -172,7 +172,6 @@ $ expo start
     <td align="center">
       <a href="https://github.com/DanielAraujoFaria" target="_blank">
         <img src="https://media.licdn.com/dms/image/v2/D5603AQE8kCKYGe8mig/profile-displayphoto-shrink_200_200/0/1674257256462?e=1730332800&v=beta&t=WU_GhGeOTY1dOQymUMzC4
-
 iyFdmOguxtcElTLnG4Eewg" width="100px;" alt="Foto do github Daniel Araujo Faria"/><br>
         <sub>
           <b>Daniel Araujo Faria</b>
@@ -181,10 +180,6 @@ iyFdmOguxtcElTLnG4Eewg" width="100px;" alt="Foto do github Daniel Araujo Faria"/
     </td>
   </tr>
 </table>
-
----
-
-Ops! Vou preencher essas seções agora:
 
 ---
 
