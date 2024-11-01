@@ -1,3 +1,4 @@
+---
 
 ## Índice
 
@@ -13,7 +14,7 @@
 - [Depuração e Suporte](#depuração-e-suporte)
 - [Aprenda Mais](#aprenda-mais)
 
-
+---
 
 ## 🤔 Sobre
 
@@ -247,5 +248,4 @@ Para aprender mais sobre as tecnologias utilizadas neste projeto:
 - [Styled-Components](https://styled-components.com/docs)
 - [Redux e Redux Toolkit](https://redux-toolkit.js.org/)
 - [Axios](https://axios-http.com/docs/intro)
-
 
