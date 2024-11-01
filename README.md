@@ -249,4 +249,4 @@ Para aprender mais sobre as tecnologias utilizadas neste projeto:
 - [Redux e Redux Toolkit](https://redux-toolkit.js.org/)
 - [Axios](https://axios-http.com/docs/intro)
 
----
+
